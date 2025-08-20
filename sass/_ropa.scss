@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+.main_ropa{
+    @extend %mainProductos;
+
+    a img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .productos_ropa{
+                @extend %divProductos;
+        section.sectiones_produc_ropa{
+                @extend %sectionesProductos;
+        }
+        img.img_main_ropa{
+                @extend %imgProductos;
+        }
+        h2 .nombre_prod_ropa{
+                @extend %h2Productos;
+        }
+        .descripcion_productos_ropa{
+                @extend %descripcionProd;
+        }
+        .precio_produc_ropa{
+                @extend %precioProd;
+}
+}
+}

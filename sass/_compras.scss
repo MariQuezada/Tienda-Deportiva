@@ -1,0 +1,45 @@
+@use "variables" as v; 
+
+.main_compras{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100vw;
+    gap: 10vw;
+    padding-top: 15vh;
+
+    .sub_main_com{
+    @include v.h2ComFav(500, 30px, 3vw, 3vw, 2px solid dimgray);
+    }
+    section.section_main_compras{
+    display: grid;
+    grid-template-areas: 
+        "img_carrito"
+        "desc_compra"
+        "int_compra"
+        "button";
+    place-items: center; 
+    text-align: center;
+    gap: 1vw;
+        img.img_main_carrito{
+    grid-area: img_carrito;
+    width: 4vw;              
+    height: auto;
+    }
+    p.descripcion_compras{
+    grid-area: desc_compra;
+        @include v.descripFavCom(450, 16px);
+    }
+    p.introductor_a_comprar{
+    grid-area: int_compra;
+    font-weight: 400;
+    font-size: 15px;
+    color: #575757;
+    }
+    button.button_compra{
+    grid-area: button;
+    font-weight: 400;
+
+    }
+    }
+}

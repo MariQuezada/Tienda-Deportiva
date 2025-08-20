@@ -1,0 +1,53 @@
+@use "variables" as v; 
+
+.header_index{
+    position: fixed;           
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+    top: 0; 
+    height: 11vh;
+    width: 100vw;
+    align-items: center;
+    background-color: black;
+    z-index:1;
+        .section_header_logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2px;
+
+            a{     
+            .logo_img{
+                    height: 7vh;
+                    width: auto;
+            }
+        }
+        .titulo_principal{
+                    font-weight: 700;
+                    font-size: 32px;
+                    color: v.$colorSecundario;
+            }
+        }
+        #menu_productos{
+        display: flex;
+        color: v.$colorSecundario;
+        width: 40vw;
+        justify-content: space-around;
+            a.navegacion_tienda{
+            text-decoration: none;       
+            font-weight: 2GU00;
+            font-size: 2vh; 
+            color: v.$colorSecundario;
+            }
+            }
+        }
+        .barra_navegacion{
+        display: flex;             
+        flex-direction: row;       
+        gap: 3vw;                 
+            a img {
+            width: auto;
+            height: v.$imgHeader;
+}
+}

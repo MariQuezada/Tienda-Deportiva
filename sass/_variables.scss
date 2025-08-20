@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+//VARIABLES
+$colorPrincipal: rgb(0, 0, 0);
+$colorSecundario: white;
+$fondoProd: 100vh;
+$imgFooter: 3.4vh;
+$imgHeader: 4.7vh;
+$colorGris: rgb(89, 89, 89);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+//EXTEND
+%mainProductos{
+    display: flex;
+    flex-direction: column;
+    height: 190vh;
+    padding-top: 4vh;
+    gap: 2.5vw;
+    color: $colorPrincipal;
+}
+%divProductos{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding-left: 13vw;
+    padding-right: 13vw;
+    gap: 1vw;
+}
+%sectionesProductos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vh;
+    gap: 0.5vw;
+}
+%imgProductos{
+    width: auto;
+    height: 55vh;
+    margin-bottom: 1.5px;
+}
+%h2Productos{
+    font-weight: 400;
+    font-size: 16px;
+    color: $colorPrincipal;
+}
+%descripcionProd{
+    font-weight: 400;
+    font-size: 15px;
+    color: $colorPrincipal;
+
+}
+%precioProd{
+    font-weight: 600;
+    font-size: 15px;
+    color: $colorPrincipal;
+}
+%textarea{
+        font-weight: 200;
+        font-size: 15px;
+}
+
+//MIXIN
+@mixin h2ComFav($weight, $size, $marginLeft, $marginRight, $borderBoton){
+    font-weight: $weight;
+    font-size: $size;
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+    border-bottom: $borderBoton;
+}
+
+@mixin descripFavCom($weight, $size){
+        font-weight: $weight;
+        font-size: $size;
+        }

@@ -1,0 +1,41 @@
+@use "variables" as v; 
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    border-top: 1px solid #a5a5a5;
+
+    section.derechos{
+    display: flex;
+    font-weight: 400;
+    font-size: 13px;
+    flex-direction: column;
+    color: #666666;
+    }
+    a.enlace_contacto{
+    text-decoration: none;     
+    font-weight: 400;
+    font-size: 13px;
+    color: #666666;
+    }
+    nav{
+        ul.flex_footer{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+            li{
+                a{
+                    img{
+                        width: auto;             
+                        height: v.$imgFooter;
+                    }
+                }
+            }
+        }
+    }
+}

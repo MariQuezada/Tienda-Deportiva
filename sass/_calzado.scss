@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+.main_calzado{
+        @extend %mainProductos;
+
+    a img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .productos_calzado{
+            @extend %divProductos;
+        section.sectiones_produc_calz{
+            @extend %sectionesProductos;
+        }
+        img.img_main_productos{
+            @extend %imgProductos;
+        }
+        h2 .nombre_prod_calz{
+        @extend %h2Productos;
+        }
+        .descripcion_productos_calzado{
+                @extend %descripcionProd;
+        }
+        .precio_produc_calz{
+                @extend %precioProd;
+}
+}
+}

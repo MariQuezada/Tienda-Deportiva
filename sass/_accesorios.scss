@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+.main_accesorios{
+    @extend %mainProductos;
+
+    a img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .productos_accesorios{
+        @extend %divProductos;
+        section.sectiones_produc_acces{
+            @extend %sectionesProductos;
+        }
+        img.img_main_acces{
+        @extend %imgProductos;
+        }
+        h2 .nombre_prod_acces{
+        @extend %h2Productos;
+        }
+        .descripcion_productos_acces{
+                @extend %descripcionProd;
+        }
+        .precio_produc_acces{
+                @extend %precioProd;
+}
+}
+}

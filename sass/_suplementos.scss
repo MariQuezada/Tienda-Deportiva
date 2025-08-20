@@ -1,0 +1,29 @@
+@use "variables" as v;
+
+.main_suplementos{
+    @extend %mainProductos;
+
+    a img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .productos_suplementos{
+            @extend %divProductos;
+        section.sectiones_produc_sup{
+                @extend %sectionesProductos;
+        }
+        img.img_main_productos{
+                @extend %imgProductos;
+        }
+        h2 .nombre_prod_sup{
+                @extend %h2Productos;
+        }
+        .descripcion_productos_sup{
+                @extend %descripcionProd;
+        }
+        .precio_produc_sup{
+                @extend %precioProd;
+}
+}
+}

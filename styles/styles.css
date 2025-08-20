@@ -1,623 +1,430 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-weight: 100;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  text-decoration: none;
 }
 
-/* HEADER */
-
-.header_index{
-    position: fixed;           /* Para fijarlo en la pantalla */
-    display: flex;
-    justify-content: space-around;
-    gap: 2vwx;
-    top: 0; 
-    height: 10vh;
-    width: 100vw;
-    background-color: #000;
-    align-items: center;
-    z-index:1;
-    
+.main_suplementos, .main_accesorios, .main_calzado, .main_ropa {
+  display: flex;
+  flex-direction: column;
+  height: 190vh;
+  padding-top: 4vh;
+  gap: 2.5vw;
+  color: rgb(0, 0, 0);
 }
 
-.section_header_logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2px;
+.main_suplementos .productos_suplementos, .main_accesorios .productos_accesorios, .main_calzado .productos_calzado, .main_ropa .productos_ropa {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  gap: 1vw;
 }
 
-.logo_img {
-    height:7vh;
-    width: auto;
-
-}
-.titulo_principal{
-    font-weight: 700;
-    font-size: 32px;
-    color: white;
+.main_suplementos .productos_suplementos section.sectiones_produc_sup, .main_accesorios .productos_accesorios section.sectiones_produc_acces, .main_calzado .productos_calzado section.sectiones_produc_calz, .main_ropa .productos_ropa section.sectiones_produc_ropa {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+  gap: 0.5vw;
 }
 
-#menu_productos {
-    font-weight: 900;
-    font-size: 18px;
-    display: flex;
-    width: 40vw;
-    justify-content: space-around;
+.main_suplementos .productos_suplementos img.img_main_productos, .main_accesorios .productos_accesorios img.img_main_acces, .main_calzado .productos_calzado img.img_main_productos, .main_ropa .productos_ropa img.img_main_ropa {
+  width: auto;
+  height: 55vh;
+  margin-bottom: 1.5px;
 }
 
-.barra_navegacion{
-    display: flex;             /* Flexbox */
-    flex-direction: row;       /* Íconos en fila (horizontalmente) */
-    gap: 3vw;                 /* Espacio entre íconos */
-}
-.barra_navegacion img{
-    width: 2vw;              
-    height: auto;
-}
-@media (max-width: 430px){
-
-    .titulo_principal{
-    display: none;
+.main_suplementos .productos_suplementos h2 .nombre_prod_sup, .main_accesorios .productos_accesorios h2 .nombre_prod_acces, .main_calzado .productos_calzado h2 .nombre_prod_calz, .main_ropa .productos_ropa h2 .nombre_prod_ropa {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
 }
 
-#menu_productos {
-    display: none;
-}
-.barra_navegacion img{
-    width: 8vw;              
-    height: auto;
-}
+.main_suplementos .productos_suplementos .descripcion_productos_sup, .main_accesorios .productos_accesorios .descripcion_productos_acces, .main_calzado .productos_calzado .descripcion_productos_calzado, .main_ropa .productos_ropa .descripcion_productos_ropa {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
 }
 
-/*MAIN FAV COM*/
-.main_fav_com{
-    height:7vh;
-    width: auto;
+.main_suplementos .productos_suplementos .precio_produc_sup, .main_accesorios .productos_accesorios .precio_produc_acces, .main_calzado .productos_calzado .precio_produc_calz, .main_ropa .productos_ropa .precio_produc_ropa {
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
 }
 
-/*PRODUCTOS INDEX Y PRODUCTOS DE CALZADO,SUPLEMENTOS ETC.*/
-
-.main_inicio{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 375vh;
-    padding-top: 4vh;
-    gap: 2.5vw;
+.header_index {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  gap: 2vw;
+  top: 0;
+  height: 11vh;
+  width: 100vw;
+  align-items: center;
+  background-color: black;
+  z-index: 1;
 }
-.h2_main_productos{
-    font-weight: 600;
-    font-size: 28px;
-    padding-left: 13vw;
+.header_index .section_header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2px;
 }
-
-.productos{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    padding-left: 13vw;
-    padding-right: 13vw;
-    gap: 1vw;
+.header_index .section_header_logo a .logo_img {
+  height: 7vh;
+  width: auto;
 }
-
-.sectiones_productos h2, .img h2{
-    margin: 1.5px;
+.header_index .section_header_logo .titulo_principal {
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
 }
-
-.img_main_inicio{
-width: auto;
-height: 55vh;
-margin-bottom: 1.5px;
+.header_index #menu_productos {
+  display: flex;
+  color: white;
+  width: 40vw;
+  justify-content: space-around;
 }
-
-.nombre_de_productos{
-    font-weight: 400;
-    font-size: 16px;
-    color: #000;
+.header_index #menu_productos a.navegacion_tienda {
+  text-decoration: none;
+  font-weight: 2GU00;
+  font-size: 2vh;
+  color: white;
 }
 
-.descripcion_productos{
-    font-weight: 400;
-    font-size: 14px;
+.barra_navegacion {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+.barra_navegacion a img {
+  width: auto;
+  height: 4.7vh;
 }
 
-.precio_productos{
-    font-weight: 600;
-    font-size: 15px;
-}
-
-.video_fondo{
-    width: 100vw;
-    height: auto;
-}
-.img_fondo_index{
-    width: 86vw;
-    height: auto;
-    padding-left: 13vw;
-}
-.h2_index{
-    padding-top: 0.1vw;
-    padding-bottom: 0.1vw;
-    padding-left: 13vw;
-    }
-
-
-
-
-    .main_productos_paginas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 183vh;
-    padding-top: 4vh;
-    gap: 2.5vw;
-    }
-
-    .sectiones_productos_paginas h2, .img h2{
-    margin: 1.5px;
-}
-
-    .productos_paginas{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    padding-left: 13vw;
-    padding-right: 13vw;
-    gap: 1vw;
-    }
-    .img_main_productos{
-        width: auto;
-        height: 55vh;
-        margin-bottom: 1.5px;
-    }
-
-    .img_fondo_paginas{
-        width: 100vw;
-        height: auto;
-    }
-/*
 .main_inicio {
-    display: grid;
-    grid-template-areas:
-        ". carr carr ."
-        "a b c d";
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    height: 200vh;
-    padding-top: 10vh;
-    justify-items: center;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 364vh;
+  padding-top: 4vh;
+  gap: 2.5vw;
+}
+.main_inicio .video_fondo {
+  width: auto;
+  height: 100vh;
+}
+.main_inicio a .img_fondo_index {
+  width: 86vw;
+  height: auto;
+  padding-left: 13vw;
+}
+.main_inicio section .h2_main_productos {
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  padding-left: 13vw;
+}
+.main_inicio .productos {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  padding-left: 13vw;
+  padding-right: 13vw;
+  gap: 1vw;
+}
+.main_inicio .productos .sectiones_productos {
+  margin: 1.5px;
+}
+.main_inicio .productos .sectiones_productos img {
+  width: auto;
+  height: 55vh;
+  margin-bottom: 1.5px;
+}
+.main_inicio .productos .sectiones_productos h2 a.nombre_de_productos {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.main_inicio .productos .sectiones_productos p.descripcion_productos {
+  font-weight: 400;
+  font-size: 14px;
+}
+.main_inicio .productos .sectiones_productos p.precio_productos {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 15px;
 }
 
-
-.carrusel {
-    grid-area: carr;
-    width: 100%;
-    
-}
-
-.tenis_azules { grid-area: a; }
-.tenis_blancos { grid-area: b; }
-.tenis_negros { grid-area: c; }
-.tenis_beige { grid-area: d; }
-
-.tenis_azules,
-.tenis_blancos,
-.tenis_negros,
-.tenis_beige {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.img_main_inicio {
-    width: 19vw;
-    height: auto;
-}
-
-.nombre_de_productos {
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    color: #000;
-}
-
-.descripcion_productos {
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.precio_productos {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.img_car {
-    width: 60vw;
-    height: auto;
-}
-    */
-
-/* Responsive */
-
-@media (max-width: 430px){
-    .main_inicio {
-    display: grid;
-    grid-template-areas:
-    "carr carr"
-    "a b"
-    "c d";
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    padding-top: 18vh;
-    justify-items: center;
-    height: 110vh;
-    }
-
-.carrusel {
-    grid-area: carr;
-    width: 60vw;
-    }
-
-    .tenis_azules {
-        grid-area: a; 
-    }
-    .tenis_blancos {
-        grid-area: b; 
-    }
-    .tenis_negros { 
-    grid-area: c;
-    }
-    .tenis_beige  {
-        grid-area: d;
-        }
-}
-
-
-
-
-
-
-/*MAIN COMPRAS*/
-
-.main_compras{
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    width: 100vw;
-    gap: 10vw;
-    padding-top: 15vh;
-}
-.sub_main_com{
-    font-weight: 500;
-    font-size: 30px;
-    margin-left: 5vw;
-    margin-right: 3vw;
-    border-bottom: 2px solid dimgray;
-
-}
-
-.section_main_compras{
-    display: grid;
-    grid-template-areas: 
-        "img_carrito"
-        "desc_compra"
-        "int_compra"
-        "button";
-    place-items: center; 
-    text-align: center;
-    gap: 1vw;
-}
-.img_main_carrito{
-    grid-area: img_carrito;
-    width: 4vw;              
-    height: auto;
-}
-.descripcion_compras{
-    grid-area: desc_compra;
-    font-weight: 450;
-    font-size: 16px;
-}
-
-.introductor_a_comprar{
-    grid-area: int_compra;
-    font-weight: 400;
-    font-size: 15px;
-    color: #575757;
-}
-
-.button_comprar{
-    grid-area: button;
-    font-weight: 400;
-}
-
-/*MAIN FAVORITOS*/
-
-.main_favoritos{
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    gap: 10vw;
-    padding-top: 15vh;
-}
-
-.sub_main_fav{
-    font-weight: 500;
-    font-size: 30px;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    border-bottom: 2px solid dimgray;
-}
-
-.section_main_favoritos{
-    display: grid;
-    grid-template-areas: 
-        "desc_favoritos"
-        "img_favoritos"
-    ;
-    place-items: center; 
-    text-align: center;
-
-}
-
-.img_main_favoritos{
-    grid-area: img_favoritos;
-    width: 2.5vw;              
-    height: auto;
-}
-
-
-.descripcion_favoritos{
-    grid-area: desc_favoritos;
-    font-weight: 450;
-    font-size: 16px;
-}
 /*MAIN LOGIN*/
-
-    .main_login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    padding-top: 15vh;
-    height: 90vh;
-    gap: 3vw;
-    }
-    .section_login{
-        border: 2px solid #000000;
-        border-radius: 1%;
-        width: 18vw;
-        height: 45vh;
-        padding: 3.5vw;
-        box-sizing: border-box;
-    }
-
-    .form_login{
-    display: grid;
-    grid-template-areas: 
-    "email email email email"
-    "cont cont cont cont" 
-    ". cont_olv cont_olv ." 
-    ". iniciar iniciar ." 
-    ". registro registro enlace"
-    ;
-    gap: 20px;
-    }
-    .sub_login{
-    font-weight: 500;
-    font-size: 25px;
-    }
-
-
-    .login_email{
-    grid-area: email;
-    font-weight: 200;
-    font-size: 15px;
-    }
-    .login_cont{
-    grid-area: cont;
-    }
-    .cont_olvidada{
-    grid-area: cont_olv;
-    font-weight: 500;
-    font-size: 15px;
-
-    }
-    .button_iniciar{
-    grid-area: iniciar;
-    font-weight: 400;
-    font-size: 15px;
+.main_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15vh;
+  height: 90vh;
+  gap: 3vw;
+}
+.main_login section.section_login {
+  width: 22vw;
+  height: 45vh;
+  padding: 3.5vw;
+  gap: 5vh;
+}
+.main_login section.section_login h2.sub_login {
+  font-weight: 500;
+  font-size: 25px;
+}
+.main_login section.section_login form.form_login {
+  display: grid;
+  grid-template-areas: "email email email email" "cont cont cont cont" ". cont_olv cont_olv ." ". iniciar iniciar ." ". registro registro enlace";
+  gap: 20px;
+}
+.main_login section.section_login form.form_login input.login_email {
+  grid-area: email;
+  font-weight: 200;
+  font-size: 15px;
+}
+.main_login section.section_login form.form_login input.login_cont {
+  grid-area: cont;
+  font-weight: 200;
+  font-size: 15px;
+}
+.main_login section.section_login form.form_login a.cont_olvidada {
+  grid-area: cont_olv;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+}
+.main_login section.section_login input.button_iniciar {
+  grid-area: iniciar;
+  font-weight: 700;
+  font-size: 14px;
+}
+.main_login section.section_login span.mensaje_registro {
+  grid-area: registro;
+  font-size: 15px;
+  font-weight: 300;
+}
+.main_login .enlaces_formulario {
+  grid-area: enlace;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
 }
 
-.mensaje_registro{
-    grid-area: registro;
-    font-size: 15px;
-    font-weight: 200;
+.main_favoritos {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  gap: 10vw;
+  padding-top: 15vh;
 }
-.enlaces_formulario{
-    grid-area: enlace;
-    font-weight: 500;
-    font-size: 15px;
+.main_favoritos h2.sub_main_fav {
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-bottom: 2px solid dimgray;
 }
+.main_favoritos section.section_main_favoritos {
+  display: grid;
+  grid-template-areas: "desc_favoritos" "img_favoritos";
+  place-items: center;
+  text-align: center;
+}
+.main_favoritos section.section_main_favoritos p.descripcion_favoritos {
+  grid-area: desc_favoritos;
+  font-weight: 450;
+  font-size: 16px;
+}
+.main_favoritos section.section_main_favoritos img {
+  grid-area: img_favoritos;
+  width: 2.5vw;
+  height: auto;
+}
+
+.main_compras {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  gap: 10vw;
+  padding-top: 15vh;
+}
+.main_compras .sub_main_com {
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-bottom: 2px solid dimgray;
+}
+.main_compras section.section_main_compras {
+  display: grid;
+  grid-template-areas: "img_carrito" "desc_compra" "int_compra" "button";
+  place-items: center;
+  text-align: center;
+  gap: 1vw;
+}
+.main_compras section.section_main_compras img.img_main_carrito {
+  grid-area: img_carrito;
+  width: 4vw;
+  height: auto;
+}
+.main_compras section.section_main_compras p.descripcion_compras {
+  grid-area: desc_compra;
+  font-weight: 450;
+  font-size: 16px;
+}
+.main_compras section.section_main_compras p.introductor_a_comprar {
+  grid-area: int_compra;
+  font-weight: 400;
+  font-size: 15px;
+  color: #575757;
+}
+.main_compras section.section_main_compras button.button_compra {
+  grid-area: button;
+  font-weight: 400;
+}
+
 /*MAIN CONTACTO*/
-.main_contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 15vh;
-    height: 100vh;
-    gap: 2vw;
+main.main_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  height: 100vh;
+  gap: 1vw;
 }
-input{
-    font-weight: 200;
-    font-size: 15px;
+main.main_contacto h2.sub_contacto {
+  font-weight: 500;
+  font-size: 30px;
 }
-
-
-
-
-.sub_contacto {
-    font-weight: 500;
-    font-size: 30px;
+main.main_contacto p.parrafo_contacto {
+  font-weight: 400;
+  font-size: 15px;
+  width: 17vw;
+  text-align: justify;
 }
-
-.parrafo_contacto {
-    font-weight: 400;
-    font-size: 15px;
-    width: 17vw;
-    text-align: justify;
+main.main_contacto form.form_contacto {
+  display: grid;
+  grid-template-areas: "lab_nom . . ." "nombre nombre nombre nombre" "lab_ed . . ." "edad edad edad edad" "lab_corr . . ." "correo correo correo correo" "lab_cont . . ." "contraseña contraseña contraseña contraseña" "lab_com . . ." "comentarios comentarios comentarios comentarios" "enviar . comenzar .";
+  gap: 20px;
 }
-
-
-.form_contacto {
-    display: grid;
-    grid-template-areas: 
-        "lab_nom . . ."
-        "nombre nombre nombre nombre"
-        "lab_ed . . ."
-        "edad edad edad edad"
-        "lab_corr . . ."
-        "correo correo correo correo"
-        "lab_cont . . ."
-        "contraseña contraseña contraseña contraseña"
-        "lab_com . . ."
-        "comentarios comentarios comentarios comentarios"
-        "enviar . comenzar ."
-        ;
-    gap: 20px;
+main.main_contacto form.form_contacto label.lab_nom {
+  grid-area: lab_nom;
+  font-weight: 600;
+  font-size: 15px;
 }
-
-label{
-    grid-area: label;
-    font-weight: 600;
-    font-size: 15px;
+main.main_contacto form.form_contacto input.nombre {
+  grid-area: nombre;
+  font-weight: 200;
+  font-size: 15px;
 }
-
-input{
-    grid-area: input;
-    font-weight: 200;
-    font-size: 15px;
+main.main_contacto form.form_contacto label.lab_ed {
+  grid-area: lab_ed;
+  font-weight: 600;
+  font-size: 15px;
 }
-
-iframe{
-    height: 50vh;
-    height: 50vw;
+main.main_contacto form.form_contacto input.edad {
+  grid-area: edad;
+  font-weight: 200;
+  font-size: 15px;
 }
-textarea{
-    height: 10vh;
+main.main_contacto form.form_contacto label.lab_corr {
+  grid-area: lab_corr;
+  font-weight: 600;
+  font-size: 15px;
 }
-
-.lab_nom {
-    grid-area: lab_nom; 
+main.main_contacto form.form_contacto input.correo {
+  grid-area: correo;
+  font-weight: 200;
+  font-size: 15px;
 }
-.lab_ed {
-    grid-area: lab_ed;
+main.main_contacto form.form_contacto label.lab_cont {
+  grid-area: lab_cont;
+  font-weight: 600;
+  font-size: 15px;
 }
-.lab_corr { 
-    grid-area: lab_corr;
+main.main_contacto form.form_contacto input.contraseña {
+  grid-area: contraseña;
+  font-weight: 200;
+  font-size: 15px;
 }
-.lab_cont {
-    grid-area: lab_cont;
+main.main_contacto form.form_contacto label.lab_com {
+  grid-area: lab_com;
+  font-weight: 600;
+  font-size: 15px;
 }
-.lab_com {
-    grid-area: lab_com; 
+main.main_contacto form.form_contacto textarea.comentarios {
+  grid-area: comentarios;
+  height: 10vh;
 }
-
-.nombre {
-    grid-area: nombre; 
+main.main_contacto form.form_contacto input.enviar {
+  grid-area: enviar;
+  font-weight: 600;
+  font-size: 12px;
 }
-.edad {
-    grid-area: edad; 
-}
-.correo { 
-    grid-area: correo;
-}
-.contraseña {
-    grid-area: contraseña; 
-}
-.comentarios { 
-    grid-area: comentarios; 
-}
-.enviar { 
-    grid-area: enviar; 
-    font-weight: 600;
-    font-size: 12px;
-}
-.comenzar {
-    grid-area: comenzar; 
-    font-weight: 600;
-    font-size: 12px;
+main.main_contacto form.form_contacto input.comenzar {
+  grid-area: comenzar;
+  font-weight: 600;
+  font-size: 12px;
 }
 
-
-/*FOOTER*/
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-    height: 10vh;
-    width:100vw ;
-    border-top: 1px solid #9b9898;
+.main_ropa a img {
+  width: 100vw;
+  height: auto;
+}
+.main_calzado a img {
+  width: 100vw;
+  height: auto;
+}
+.main_accesorios a img {
+  width: 100vw;
+  height: auto;
+}
+.main_suplementos a img {
+  width: 100vw;
+  height: auto;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  border-top: 1px solid #a5a5a5;
+}
+.footer section.derechos {
+  display: flex;
+  font-weight: 400;
+  font-size: 13px;
+  flex-direction: column;
+  color: #666666;
+}
+.footer a.enlace_contacto {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666666;
+}
+.footer nav ul.flex_footer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.footer nav ul.flex_footer li a img {
+  width: auto;
+  height: 3.4vh;
 }
 
-.derechos{
-    display: flex;
-    font-weight: 400;
-    font-size: 13px;
-    flex-direction: column;
-    color: #575757;
-    }
-
-    .enlace_contacto{
-    font-weight: 400;
-    font-size: 13px;
-    color: #575757;
-    }  
-
-
-.flex_footer  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-items: end;
-}
-
-.flex_footer  li img {
-    width: 1.6vw;             
-    height: auto;
-    gap: 5vw;
-}   
-
-@media (max-width: 430px){
-.footer{
-    align-items: center; 
-    flex-direction: column-reverse;
-    justify-content: end;
-    height: 30vh;
-    gap: 4vw;
-}    
-
-.flex_footer  li img {
-    width: 8vw;             
-    height: auto;
-    gap: 5vw; 
-}   
-}
-
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
+/*# sourceMappingURL=styles.css.map */
