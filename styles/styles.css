@@ -119,10 +119,23 @@
   width: auto;
   height: 100vh;
 }
-.main_inicio a .img_fondo_index {
-  width: 86vw;
+.main_inicio .contenedor {
+  position: relative;
+  display: flex;
+  height: 40vw;
+}
+.main_inicio .contenedor .img_fondo {
+  position: absolute;
   height: auto;
-  padding-left: 13vw;
+  width: 74vw;
+  left: 13vw;
+}
+.main_inicio .contenedor .h2_animacion {
+  font-weight: 500;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  padding-left: 15vw;
+  align-content: center;
 }
 .main_inicio section .h2_main_productos {
   font-weight: 700;

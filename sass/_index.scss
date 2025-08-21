@@ -11,12 +11,24 @@
                 width: auto;
                 height: v.$fondoProd;
             }
-            a{ 
-                .img_fondo_index{
-            width: 86vw;
-            height: auto;
-            padding-left: 13vw;
-            }}
+                        .contenedor{  
+                position: relative;
+                display: flex;
+                height: 40vw;
+                    .img_fondo{
+                    position: absolute;
+                    height: auto;
+                    width: 74vw;
+                    left: 13vw;
+                }
+                .h2_animacion{
+                    font-weight: 500;
+                    font-size: 70px;   
+                    color: rgb(255, 255, 255);
+                    padding-left: 15vw;
+                    align-content: center;
+            }
+            }
             section{
                 .h2_main_productos{
                     font-weight: 700;
