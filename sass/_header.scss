@@ -1,16 +1,19 @@
 @use "variables" as v; 
 
 .header_index{
-    position: fixed;           
+    position: fixed;  
+    z-index: 1000;       
     display: flex;
     justify-content: space-around;
     gap: 2vw;
     top: 0; 
-    height: 11vh;
-    width: 100vw;
+    left: 0;
+    height: 10%;
+    width: 100%;
     align-items: center;
-    background-color: black;
-    z-index:1;
+    background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(59, 29, 29, 1) 50%, rgba(0, 0, 0, 1) 80%);
+
         .section_header_logo{
             display: flex;
             align-items: center;

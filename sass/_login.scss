@@ -1,63 +1,41 @@
 /*MAIN LOGIN*/
-.main_login{
-    display: flex;
+.main_login {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+    min-height: 100vh; 
+  background: #f5f5f5;
+
+  .section_login{
+     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    padding-top: 15vh;
-    height: 90vh;
-    gap: 3vw;
-        section.section_login{
-        width: 22vw;
-        height: 45vh;
-        padding: 3.5vw;
-        gap: 5vh;
-        h2.sub_login{
-        font-weight: 500;
-        font-size: 25px;
-        }
-        form.form_login{
-        display: grid;
-        grid-template-areas: 
-        "email email email email"
-        "cont cont cont cont" 
-        ". cont_olv cont_olv ." 
-        ". iniciar iniciar ." 
-        ". registro registro enlace"
-    ;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    h2.sub_login{
+        font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #000000;
 
-    gap: 20px;
-            input.login_email{
-                grid-area: email;
-                font-weight: 200;
-                font-size: 15px;
-            }
-            input.login_cont{
-                grid-area: cont;
-                font-weight: 200;
-                font-size: 15px;
-            }
-            a.cont_olvidada{
-            grid-area: cont_olv;
-            font-weight: 500;
-            font-size: 15px;
-            color: #000000;
-            } 
-            }
-            input.button_iniciar{
-            grid-area: iniciar;
-            font-weight: 700;
-            font-size: 14px;
-            }
-            span.mensaje_registro{
-            grid-area: registro;
-            font-size: 15px;
-            font-weight: 300;}
+    }
+    .form_login{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+        .input_login{
+        padding: 0.8rem;
+        border: 1px solid #353535;
+        border-radius: 8px;
+        font-size: 1rem;
         }
-            .enlaces_formulario{
-            grid-area: enlace;
-            font-weight: 500;
-            font-size: 15px;
-            color: #000000;
-}
+        .button_iniciar{
+        background: black;
+        color: white;
+        border: none;
+        }
+
+    }
+  }
 }

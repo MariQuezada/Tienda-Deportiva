@@ -1,45 +1,96 @@
 @use "variables" as v; 
-
 .main_compras{
     display: flex;
     flex-direction: column;
-    height: 90vh;
     width: 100vw;
     gap: 10vw;
     padding-top: 15vh;
 
-    .sub_main_com{
+    h2.sub_main_com{
     @include v.h2ComFav(500, 30px, 3vw, 3vw, 2px solid dimgray);
     }
-    section.section_main_compras{
+
+    .section_main_compras{
     display: grid;
     grid-template-areas: 
-        "img_carrito"
-        "desc_compra"
-        "int_compra"
-        "button";
+    "img_carrito"
+    "desc_compra"
+    "int_compra"
+    "button";
     place-items: center; 
     text-align: center;
     gap: 1vw;
-        img.img_main_carrito{
+
+    .img_main_carrito{
     grid-area: img_carrito;
     width: 4vw;              
     height: auto;
     }
-    p.descripcion_compras{
-    grid-area: desc_compra;
+
+    .descripcion_compras{
+        grid-area: desc_compra;
         @include v.descripFavCom(450, 16px);
     }
-    p.introductor_a_comprar{
+
+    .introductor_a_comprar{
     grid-area: int_compra;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 16px;
     color: #575757;
     }
-    button.button_compra{
-    grid-area: button;
-    font-weight: 400;
 
-    }
-    }
+    .button_compra{
+    grid-area: button;
+        background: black;
+        color: white;
+        padding: 0.8rem;
+        border: 1px solid #353535;
+        border-radius: 8px;
+        font-size: 1rem;
+        width: 16%;
+    } 
+
 }
+    .contenedor_articulos_recomend{
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+
+    .h2_recomendaciones{
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .recomend_articulos{
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+
+    .sectiones_prduc_recomend{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+
+    .img_recomend{
+        width: 15vw;
+        height: auto;
+        flex-direction: row;
+        }
+
+        .descripcion_productos_recomend{
+        font-size: 15px;
+        font-weight: 300;
+        }
+
+        .precio_produc_recomend{
+        font-size: 15px;
+                font-weight: 500;   
+        }
+    }
+    }
+    }
+    }
+
+

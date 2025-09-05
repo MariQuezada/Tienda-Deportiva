@@ -1,0 +1,183 @@
+@use "variables" as v; 
+
+.main_conocenos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vw;
+
+    .contenedor_fondo{
+        position: relative;
+        display: inline-block;
+
+        img.conocenos_fondo{
+        width: 100vw;
+        height: 25vw;
+        }
+        h2.h2_titulo{
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 60px;
+        }
+    }
+    }
+    .div_conocenos{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+
+    div.contenido_principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7vw;
+        padding-top: 3vw;
+
+        section.section_princ{
+        display: flex;
+        gap: 7vw;
+        align-items: center;
+
+            div.div_historia{
+            display: flex;
+            gap: 0.5vw;
+            flex-direction: column;
+
+            h2.h2_historia{
+            font-weight: 500;
+            font-size: 25px;
+            }
+
+            p.p_historia{
+            font-weight: 300;
+            font-size: 17px;
+            width: 25vw;
+            }
+
+            }
+            img.img_sucursal{
+            display: flex;
+            flex-direction: row;
+            width: 30vw;
+            height: auto;
+            }
+        }
+    }
+
+    div.opiniones_cifras_mapa{
+        display: flex;
+        flex-direction: column;
+        background: #050101;
+        background: linear-gradient(0deg, rgba(5, 1, 1, 1) 51%, rgba(122, 7, 7, 1) 80%, rgba(255, 255, 255, 1) 100%);
+        width: 100vw;
+        padding: 5vw;
+        gap: 5vw;
+
+        div.opiniones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+
+            h2.h2_subtitulo{
+                font-size: 28px;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+
+            }
+                div.div_opiniones{
+                            display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+                    section.sectiones_opiniones{
+                            display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 2vw;
+                        background-color: #1f1f1f;
+                        border-radius: 7px;
+                        gap: 0.5vw;
+                        img.img_opinadores{
+                        width: 6vw;
+                        height: auto;
+                        color: white;
+                        }
+                        span.span_nombres{
+                            font-size: 18px;
+                        font-weight: 600;
+                        color: white;
+                        }
+                        p.comentarios{
+                        font-size: 15px;
+                        font-weight: 300;
+                        width: 11vw;
+                        color: white; 
+                        }
+                    }
+            }
+        }
+        div.div_cifras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vw;
+    gap: 3vw;
+
+    h2.titulo_cifras{
+        font-size: 28px;
+        font-weight: 600;
+        color: white;
+    }
+
+    div.cifras{
+        display: flex;
+        justify-content: space-around;
+        gap: 9vw;
+
+        .sectiones_cif{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 4vw;
+            border-radius: 12px;
+
+        }
+        .subtitulos_cifras{
+            font-size: 50px;
+            font-weight: 800;
+            color: white;
+
+        }
+        .parrafo_cifras{
+            font-size: 15px;
+            font-weight: 400;
+            color: white;
+        }    
+    }
+}
+.section_mapa{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    h2.h2_mapa{
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+            }
+        iframe{
+            width: 80vw;
+            height: 30vh;
+            filter: invert(100%);
+        }
+    }
+    }
+}
+
+

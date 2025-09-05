@@ -59,15 +59,17 @@
 
 .header_index {
   position: fixed;
+  z-index: 1000;
   display: flex;
   justify-content: space-around;
   gap: 2vw;
   top: 0;
-  height: 11vh;
-  width: 100vw;
+  left: 0;
+  height: 10%;
+  width: 100%;
   align-items: center;
-  background-color: black;
-  z-index: 1;
+  background: #000000;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 6%, rgb(59, 29, 29) 50%, rgb(0, 0, 0) 80%);
 }
 .header_index .section_header_logo {
   display: flex;
@@ -111,286 +113,329 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 364vh;
   padding-top: 4vh;
   gap: 2.5vw;
 }
-.main_inicio .video_fondo {
-  width: auto;
-  height: 100vh;
+.main_inicio .carrusel {
+  padding-top: 1vw;
 }
-.main_inicio .contenedor {
-  position: relative;
+.main_inicio .contenedor_productos {
   display: flex;
-  height: 40vw;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 4vw;
 }
-.main_inicio .contenedor .img_fondo {
-  position: absolute;
-  height: auto;
-  width: 74vw;
-  left: 13vw;
-}
-.main_inicio .contenedor .h2_animacion {
-  font-weight: 500;
-  font-size: 70px;
-  color: rgb(255, 255, 255);
-  padding-left: 15vw;
-  align-content: center;
-}
-.main_inicio section .h2_main_productos {
-  font-weight: 700;
-  font-size: 22px;
-  color: rgb(0, 0, 0);
-  padding-left: 13vw;
-}
-.main_inicio .productos {
+.main_inicio .contenedor_productos article.article_produc_index {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_inicio .contenedor_productos article.article_produc_index .productos {
+  display: flex;
+  align-items: center;
   flex-direction: row;
-  justify-items: center;
-  padding-left: 13vw;
-  padding-right: 13vw;
+  justify-content: center;
   gap: 1vw;
 }
-.main_inicio .productos .sectiones_productos {
-  margin: 1.5px;
+.main_inicio .contenedor_productos article.article_produc_index section.sectiones_productos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
 }
-.main_inicio .productos .sectiones_productos img {
-  width: auto;
+.main_inicio .contenedor_productos article.article_produc_index section.sectiones_productos img.img_main_inicio {
   height: 55vh;
-  margin-bottom: 1.5px;
+  width: auto;
 }
-.main_inicio .productos .sectiones_productos h2 a.nombre_de_productos {
+.main_inicio .contenedor_productos article.article_produc_index section.sectiones_productos .div_descripciones_prod {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1vw;
+  align-items: flex-start;
+}
+.main_inicio .contenedor_productos article.article_produc_index section.sectiones_productos .div_descripciones_prod h2 a.nombre_de_productos {
   text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 12px;
   color: rgb(0, 0, 0);
 }
-.main_inicio .productos .sectiones_productos p.descripcion_productos {
+.main_inicio .contenedor_productos article.article_produc_index section.sectiones_productos .div_descripciones_prod p.descripcion_productos {
   font-weight: 400;
   font-size: 14px;
 }
-.main_inicio .productos .sectiones_productos p.precio_productos {
+.main_inicio .contenedor_productos article.article_produc_index section.sectiones_productos .div_descripciones_prod p.precio_productos {
   color: rgb(0, 0, 0);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
 }
 
 /*MAIN LOGIN*/
 .main_login {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding-top: 15vh;
-  height: 90vh;
-  gap: 3vw;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
 }
-.main_login section.section_login {
-  width: 22vw;
-  height: 45vh;
-  padding: 3.5vw;
-  gap: 5vh;
-}
-.main_login section.section_login h2.sub_login {
-  font-weight: 500;
-  font-size: 25px;
-}
-.main_login section.section_login form.form_login {
-  display: grid;
-  grid-template-areas: "email email email email" "cont cont cont cont" ". cont_olv cont_olv ." ". iniciar iniciar ." ". registro registro enlace";
-  gap: 20px;
-}
-.main_login section.section_login form.form_login input.login_email {
-  grid-area: email;
-  font-weight: 200;
-  font-size: 15px;
-}
-.main_login section.section_login form.form_login input.login_cont {
-  grid-area: cont;
-  font-weight: 200;
-  font-size: 15px;
-}
-.main_login section.section_login form.form_login a.cont_olvidada {
-  grid-area: cont_olv;
-  font-weight: 500;
-  font-size: 15px;
-  color: #000000;
-}
-.main_login section.section_login input.button_iniciar {
-  grid-area: iniciar;
-  font-weight: 700;
-  font-size: 14px;
-}
-.main_login section.section_login span.mensaje_registro {
-  grid-area: registro;
-  font-size: 15px;
-  font-weight: 300;
-}
-.main_login .enlaces_formulario {
-  grid-area: enlace;
-  font-weight: 500;
-  font-size: 15px;
-  color: #000000;
-}
-
-.main_favoritos {
+.main_login .section_login {
   display: flex;
   flex-direction: column;
-  height: 90vh;
-  gap: 10vw;
-  padding-top: 15vh;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
 }
-.main_favoritos h2.sub_main_fav {
-  font-weight: 500;
-  font-size: 30px;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  border-bottom: 2px solid dimgray;
+.main_login .section_login h2.sub_login {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
 }
-.main_favoritos section.section_main_favoritos {
-  display: grid;
-  grid-template-areas: "desc_favoritos" "img_favoritos";
-  place-items: center;
-  text-align: center;
+.main_login .section_login .form_login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
-.main_favoritos section.section_main_favoritos p.descripcion_favoritos {
-  grid-area: desc_favoritos;
-  font-weight: 450;
-  font-size: 16px;
+.main_login .section_login .form_login .input_login {
+  padding: 0.8rem;
+  border: 1px solid #353535;
+  border-radius: 8px;
+  font-size: 1rem;
 }
-.main_favoritos section.section_main_favoritos img {
-  grid-area: img_favoritos;
-  width: 2.5vw;
-  height: auto;
+.main_login .section_login .form_login .button_iniciar {
+  background: black;
+  color: white;
+  border: none;
 }
 
 .main_compras {
   display: flex;
   flex-direction: column;
-  height: 90vh;
   width: 100vw;
   gap: 10vw;
   padding-top: 15vh;
 }
-.main_compras .sub_main_com {
+.main_compras h2.sub_main_com {
   font-weight: 500;
   font-size: 30px;
   margin-left: 3vw;
   margin-right: 3vw;
   border-bottom: 2px solid dimgray;
 }
-.main_compras section.section_main_compras {
+.main_compras .section_main_compras {
   display: grid;
   grid-template-areas: "img_carrito" "desc_compra" "int_compra" "button";
   place-items: center;
   text-align: center;
   gap: 1vw;
 }
-.main_compras section.section_main_compras img.img_main_carrito {
+.main_compras .section_main_compras .img_main_carrito {
   grid-area: img_carrito;
   width: 4vw;
   height: auto;
 }
-.main_compras section.section_main_compras p.descripcion_compras {
+.main_compras .section_main_compras .descripcion_compras {
   grid-area: desc_compra;
   font-weight: 450;
   font-size: 16px;
 }
-.main_compras section.section_main_compras p.introductor_a_comprar {
+.main_compras .section_main_compras .introductor_a_comprar {
   grid-area: int_compra;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 16px;
   color: #575757;
 }
-.main_compras section.section_main_compras button.button_compra {
+.main_compras .section_main_compras .button_compra {
   grid-area: button;
-  font-weight: 400;
+  background: black;
+  color: white;
+  padding: 0.8rem;
+  border: 1px solid #353535;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 16%;
 }
-
-/*MAIN CONTACTO*/
-main.main_contacto {
+.main_compras .contenedor_articulos_recomend {
+  padding: 4vw;
   display: flex;
   flex-direction: column;
+  gap: 2vw;
   align-items: center;
-  padding-top: 15vh;
-  height: 100vh;
+}
+.main_compras .contenedor_articulos_recomend .h2_recomendaciones {
+  font-size: 26px;
+  font-weight: 500;
+}
+.main_compras .contenedor_articulos_recomend .recomend_articulos {
+  display: flex;
+  flex-direction: row;
   gap: 1vw;
 }
-main.main_contacto h2.sub_contacto {
+.main_compras .contenedor_articulos_recomend .recomend_articulos .sectiones_prduc_recomend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.main_compras .contenedor_articulos_recomend .recomend_articulos .sectiones_prduc_recomend .img_recomend {
+  width: 15vw;
+  height: auto;
+  flex-direction: row;
+}
+.main_compras .contenedor_articulos_recomend .recomend_articulos .sectiones_prduc_recomend .descripcion_productos_recomend {
+  font-size: 15px;
+  font-weight: 300;
+}
+.main_compras .contenedor_articulos_recomend .recomend_articulos .sectiones_prduc_recomend .precio_produc_recomend {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main_img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+  padding-left: 19vw;
+  padding-right: 0%;
+  padding-top: 4%;
+  gap: 16vw;
+  width: 100%;
+}
+.main_img .caja_contenido {
+  padding: 5vw;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.main_img .caja_contenido .contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.main_img .caja_contenido .contacto h2.sub_contacto {
   font-weight: 500;
   font-size: 30px;
 }
-main.main_contacto p.parrafo_contacto {
+.main_img .caja_contenido .contacto p.parrafo_contacto {
   font-weight: 400;
   font-size: 15px;
-  width: 17vw;
   text-align: justify;
 }
-main.main_contacto form.form_contacto {
-  display: grid;
-  grid-template-areas: "lab_nom . . ." "nombre nombre nombre nombre" "lab_ed . . ." "edad edad edad edad" "lab_corr . . ." "correo correo correo correo" "lab_cont . . ." "contraseña contraseña contraseña contraseña" "lab_com . . ." "comentarios comentarios comentarios comentarios" "enviar . comenzar .";
-  gap: 20px;
+.main_img .caja_contenido .contacto .form_contacto {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
-main.main_contacto form.form_contacto label.lab_nom {
-  grid-area: lab_nom;
-  font-weight: 600;
-  font-size: 15px;
+.main_img .caja_contenido .contacto .form_contacto .inputs_contacto {
+  padding: 0.8rem;
+  border: 1px solid #353535;
+  font-size: 1rem;
+  font-weight: 300;
 }
-main.main_contacto form.form_contacto input.nombre {
-  grid-area: nombre;
-  font-weight: 200;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto label.lab_ed {
-  grid-area: lab_ed;
-  font-weight: 600;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto input.edad {
-  grid-area: edad;
-  font-weight: 200;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto label.lab_corr {
-  grid-area: lab_corr;
-  font-weight: 600;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto input.correo {
-  grid-area: correo;
-  font-weight: 200;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto label.lab_cont {
-  grid-area: lab_cont;
-  font-weight: 600;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto input.contraseña {
-  grid-area: contraseña;
-  font-weight: 200;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto label.lab_com {
-  grid-area: lab_com;
-  font-weight: 600;
-  font-size: 15px;
-}
-main.main_contacto form.form_contacto textarea.comentarios {
-  grid-area: comentarios;
+.main_img .caja_contenido .contacto .form_contacto .comentarios {
+  font-size: 1rem;
+  font-weight: 300;
   height: 10vh;
 }
-main.main_contacto form.form_contacto input.enviar {
-  grid-area: enviar;
-  font-weight: 600;
-  font-size: 12px;
+.main_img .caja_contenido .contacto .form_contacto .button_contacto {
+  font-size: 1rem;
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border: 1px solid #353535;
+  border-radius: 2px;
 }
-main.main_contacto form.form_contacto input.comenzar {
-  grid-area: comenzar;
-  font-weight: 600;
-  font-size: 12px;
+.main_img .contenedor {
+  grid-area: d;
+  display: flex;
+}
+.main_img .contenedor .fondo {
+  background-color: rgb(121, 0, 0);
+  padding-bottom: 0%;
+  width: 29.8vw;
+  position: relative;
+  overflow: visible;
+}
+.main_img .contenedor .fondo .img_fondo {
+  width: auto;
+  height: 27vw;
+  position: absolute;
+  right: 21vw;
+  top: 7vw;
 }
 
+/* --- MEDIA QUERY PARA TELÉFONO --- */
+@media (max-width: 768px) {
+  .main_img {
+    flex-direction: column; /* en móvil se apilan uno abajo del otro */
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .contacto,
+  .preg {
+    width: 100%;
+  }
+  .form_contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .inputs_contacto,
+  .comentarios {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .comentarios {
+    min-height: 100px;
+    resize: vertical;
+  }
+  .button_contacto {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .button_contacto:hover {
+    background: #444;
+  }
+  .preg h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .accordion {
+    width: 100%;
+  }
+  .button_contacto {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .button_contacto:hover {
+    background: #444;
+  }
+  .preg h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .accordion {
+    width: 100%;
+  }
+}
 .main_ropa a img {
   width: 100vw;
   height: auto;
@@ -415,19 +460,20 @@ main.main_contacto form.form_contacto input.comenzar {
   align-items: center;
   height: 10vh;
   border-top: 1px solid #a5a5a5;
+  background-color: black;
 }
 .footer section.derechos {
   display: flex;
   font-weight: 400;
   font-size: 13px;
   flex-direction: column;
-  color: #666666;
+  color: #a5a5a5;
 }
 .footer a.enlace_contacto {
   text-decoration: none;
   font-weight: 400;
   font-size: 13px;
-  color: #666666;
+  color: #a5a5a5;
 }
 .footer nav ul.flex_footer {
   list-style: none;
@@ -437,7 +483,171 @@ main.main_contacto form.form_contacto input.comenzar {
 }
 .footer nav ul.flex_footer li a img {
   width: auto;
-  height: 3.4vh;
+  height: 4.2vh;
+}
+
+.main_conocenos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vw;
+}
+.main_conocenos .contenedor_fondo {
+  position: relative;
+  display: inline-block;
+}
+.main_conocenos .contenedor_fondo img.conocenos_fondo {
+  width: 100vw;
+  height: 25vw;
+}
+.main_conocenos .contenedor_fondo h2.h2_titulo {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.div_conocenos {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.div_conocenos div.contenido_principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7vw;
+  padding-top: 3vw;
+}
+.div_conocenos div.contenido_principal section.section_princ {
+  display: flex;
+  gap: 7vw;
+  align-items: center;
+}
+.div_conocenos div.contenido_principal section.section_princ div.div_historia {
+  display: flex;
+  gap: 0.5vw;
+  flex-direction: column;
+}
+.div_conocenos div.contenido_principal section.section_princ div.div_historia h2.h2_historia {
+  font-weight: 500;
+  font-size: 25px;
+}
+.div_conocenos div.contenido_principal section.section_princ div.div_historia p.p_historia {
+  font-weight: 300;
+  font-size: 17px;
+  width: 25vw;
+}
+.div_conocenos div.contenido_principal section.section_princ img.img_sucursal {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  height: auto;
+}
+.div_conocenos div.opiniones_cifras_mapa {
+  display: flex;
+  flex-direction: column;
+  background: #050101;
+  background: linear-gradient(0deg, rgb(5, 1, 1) 51%, rgb(122, 7, 7) 80%, rgb(255, 255, 255) 100%);
+  width: 100vw;
+  padding: 5vw;
+  gap: 5vw;
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones h2.h2_subtitulo {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones div.div_opiniones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones div.div_opiniones section.sectiones_opiniones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  background-color: #1f1f1f;
+  border-radius: 7px;
+  gap: 0.5vw;
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones div.div_opiniones section.sectiones_opiniones img.img_opinadores {
+  width: 6vw;
+  height: auto;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones div.div_opiniones section.sectiones_opiniones span.span_nombres {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa div.opiniones div.div_opiniones section.sectiones_opiniones p.comentarios {
+  font-size: 15px;
+  font-weight: 300;
+  width: 11vw;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa div.div_cifras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vw;
+  gap: 3vw;
+}
+.div_conocenos div.opiniones_cifras_mapa div.div_cifras h2.titulo_cifras {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa div.div_cifras div.cifras {
+  display: flex;
+  justify-content: space-around;
+  gap: 9vw;
+}
+.div_conocenos div.opiniones_cifras_mapa div.div_cifras div.cifras .sectiones_cif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 4vw;
+  border-radius: 12px;
+}
+.div_conocenos div.opiniones_cifras_mapa div.div_cifras div.cifras .subtitulos_cifras {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa div.div_cifras div.cifras .parrafo_cifras {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa .section_mapa {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+}
+.div_conocenos div.opiniones_cifras_mapa .section_mapa h2.h2_mapa {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+.div_conocenos div.opiniones_cifras_mapa .section_mapa iframe {
+  width: 80vw;
+  height: 30vh;
+  filter: invert(100%);
 }
 
 /*# sourceMappingURL=styles.css.map */

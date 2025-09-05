@@ -8,19 +8,20 @@
     align-items: center;
     height: 10vh;
     border-top: 1px solid #a5a5a5;
+    background-color: black;
 
     section.derechos{
     display: flex;
     font-weight: 400;
     font-size: 13px;
     flex-direction: column;
-    color: #666666;
+    color: #a5a5a5;
     }
     a.enlace_contacto{
     text-decoration: none;     
     font-weight: 400;
     font-size: 13px;
-    color: #666666;
+    color: #a5a5a5;
     }
     nav{
         ul.flex_footer{

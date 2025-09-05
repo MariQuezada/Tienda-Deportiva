@@ -1,107 +1,198 @@
-/*MAIN CONTACTO*/
-main.main_contacto{
+.main_img{
+    display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+  padding-left: 19vw;
+  padding-right: 0%;
+  padding-top: 4%;
+  gap: 16vw;
+  width: 100%;
+
+ .caja_contenido{
+    padding: 5vw;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+
+  .contacto{
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+
+
+    h2.sub_contacto {
+      font-weight: 500;
+      font-size: 30px;
+    }
+        p.parrafo_contacto {
+      font-weight: 400;
+      font-size: 15px;
+      text-align: justify;
+    }
+            .form_contacto {
+      width: 25vw;
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+            .inputs_contacto{
+        padding: 0.8rem;
+        border: 1px solid #353535;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+            .comentarios{
+                font-size: 1rem;
+              font-weight: 300;
+              height: 10vh;
+            }
+          .button_contacto{
+            font-size: 1rem;
+            background: black;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border: 1px solid #353535;
+            border-radius: 2px;
+      }
+      }
+  }
+ }
+ .contenedor{
+    grid-area: d;
+    display: flex;
+    .fondo {
+  background-color: rgb(121, 0, 0);
+  padding-bottom: 0%;
+  width: 29.8vw;
+  position: relative;
+  overflow: visible; 
+
+  .img_fondo{
+  width: auto;           
+  height: 27vw;
+  position: absolute;
+  right: 21vw;       
+  top: 7vw;     
+}
+}
+}
+}
+
+
+
+
+/* --- MEDIA QUERY PARA TELÉFONO --- */
+@media (max-width: 768px) {
+  .main_img {
+    flex-direction: column; /* en móvil se apilan uno abajo del otro */
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .contacto, 
+  .preg {
+    width: 100%;
+  }
+
+  .form_contacto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 15vh;
-    height: 100vh;
-    gap: 1vw;
-    h2.sub_contacto{
-    font-weight: 500;
-    font-size: 30px;
-    }
-    p.parrafo_contacto{
-    font-weight: 400;
-    font-size: 15px;
-    width: 17vw;
-    text-align: justify;
-    }
-    form.form_contacto{
-            display: grid;
-        grid-template-areas: 
-        "lab_nom . . ."
-        "nombre nombre nombre nombre"
-        "lab_ed . . ."
-        "edad edad edad edad"
-        "lab_corr . . ."
-        "correo correo correo correo"
-        "lab_cont . . ."
-        "contraseña contraseña contraseña contraseña"
-        "lab_com . . ."
-        "comentarios comentarios comentarios comentarios"
-        "enviar . comenzar ."
-        ;
-    gap: 20px;
-            label.lab_nom{
-                grid-area: lab_nom;
-                font-weight: 600;
-                font-size: 15px;
-
-            }
-            input.nombre{
-            grid-area: nombre; 
-                font-weight: 200;
-                font-size: 15px;
-            }  
-            label.lab_ed{
-                grid-area: lab_ed; 
-                font-weight: 600;
-                font-size: 15px;
-
-            } 
-            input.edad{
-            grid-area: edad; 
-            font-weight: 200;
-            font-size: 15px;
-                
-            }  
-            label.lab_corr{
-                grid-area: lab_corr; 
-                font-weight: 600;
-                font-size: 15px;
-
-            }
-            input.correo{
-            grid-area: correo; 
-            font-weight: 200;
-            font-size: 15px;
-
-            }      
-            label.lab_cont{
-                grid-area: lab_cont;
-                font-weight: 600;
-                font-size: 15px;
-
-            }
-            input.contraseña{
-            grid-area: contraseña; 
-            font-weight: 200;
-            font-size: 15px;
-                
-            }      
-            label.lab_com{
-                grid-area: lab_com;
-                font-weight: 600;
-                font-size: 15px; 
-
-            }
-            textarea.comentarios{
-                    grid-area: comentarios; 
-                    height: 10vh;
-
-            }
-
-            input.enviar{
-                    grid-area: enviar; 
-    font-weight: 600;
-    font-size: 12px;
+    gap: 1rem;
+  }
 
 
-            }
-            input.comenzar{
-                    grid-area: comenzar; 
-    font-weight: 600;
-    font-size: 12px;
-            }
-    }
+  .inputs_contacto,
+  .comentarios {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .comentarios {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .button_contacto {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .button_contacto:hover {
+    background: #444;
+  }
+
+  .preg h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordion {
+    width: 100%;
+}  .button_contacto {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .button_contacto:hover {
+    background: #444;
+  }
+
+  .preg h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .accordion {
+    width: 100%;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
