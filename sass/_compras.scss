@@ -23,7 +23,7 @@
 
     .img_main_carrito{
     grid-area: img_carrito;
-    width: 4vw;              
+    width: 5vw;              
     height: auto;
     }
 
@@ -94,3 +94,78 @@
     }
 
 
+
+    @media (max-width: 768px) {
+    .main_compras {
+    padding-top: 12vh;
+    gap: 6vh;
+
+    h2.sub_main_com {
+        font-size: 22px;
+        text-align: center;
+        border-bottom: 1px solid dimgray;
+        padding-bottom: 15px;
+    }
+
+    .section_main_compras {
+        gap: 1vh;
+
+        .img_main_carrito {
+        width: 20vw;
+        height: auto;
+        }
+
+    .descripcion_compras {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 4vw;
+    }
+
+        .introductor_a_comprar {
+        display: none;
+    }
+
+    .button_compra {
+        width: 90%;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        }
+    }
+
+    .contenedor_articulos_recomend {
+        padding: 5vw;
+        gap: 5vh;
+
+        .h2_recomendaciones {
+        font-size: 20px;
+        text-align: center;
+        }
+
+        .recomend_articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5vw;
+        justify-items: center;
+
+        .sectiones_prduc_recomend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+
+        .img_recomend {
+            width: 40vw;
+            height: auto;
+        }
+
+        .descripcion_productos_recomend,
+        .precio_produc_recomend {
+            font-size: 13px;
+            text-align: center;
+            }
+        }
+    }
+}
+}
+}

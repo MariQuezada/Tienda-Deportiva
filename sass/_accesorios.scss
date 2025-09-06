@@ -3,8 +3,8 @@
 .main_accesorios{
     @extend %mainProductos;
 
-    a img{
-        width: 100vw;
+    a.img_fondo_paginas{
+        width: 100%;
         height: auto;
     }
 
@@ -27,3 +27,60 @@
 }
 }
 }
+
+
+
+    @media (max-width: 768px) {
+        .main_accesorios{
+        padding-left: 0;
+        padding-right: 0;
+        }
+
+
+.productos_accesorios{
+   padding-left: 0;
+   padding-right: 0;
+   gap: 0.1px;
+
+
+}    
+.img_fondo_paginas{
+    width: 100%;
+    height: auto;
+}    
+
+.divv_prod{
+
+        display: grid !important;
+        grid-template-areas: 
+". a b ."
+". c d ."
+;
+
+}
+
+.sect_pa{
+    grid-area: a;
+    
+}
+.sect_pb{
+    grid-area: b;
+    
+}
+.sect_pc{
+    grid-area: c;
+
+}
+.sect_pd{
+    grid-area: d;
+
+}
+
+.img_main_acces{
+    width: 100%;
+    height: auto;          
+    max-height: 210px; 
+
+}
+}
+

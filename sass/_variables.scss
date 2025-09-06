@@ -19,10 +19,11 @@ $imgHeader: 4.7vh;
 %mainProductos{
     display: flex;
     flex-direction: column;
-    height: 190vh;
+    align-items: center;
     padding-top: 4vh;
     gap: 2.5vw;
     color: $colorPrincipal;
+    width: 100%;
 }
 %divProductos{
     display: flex;
@@ -35,8 +36,7 @@ $imgHeader: 4.7vh;
 %sectionesProductos{
     display: flex;
     flex-direction: column;
-    padding-top: 4vh;
-    gap: 0.5vw;
+
 }
 %imgProductos{
     width: auto;

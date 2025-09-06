@@ -1,56 +1,7 @@
-@use "variables" as v; 
-
-.header_index{
-    position: fixed;  
-    z-index: 1000;       
-    display: flex;
-    justify-content: space-around;
-    gap: 2vw;
-    top: 0; 
-    left: 0;
-    height: 10%;
-    width: 100%;
-    align-items: center;
-    background: #000000;
-background: linear-gradient(90deg, rgba(0, 0, 0, 1) 6%, rgba(59, 29, 29, 1) 50%, rgba(0, 0, 0, 1) 80%);
-
-        .section_header_logo{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            gap: 2px;
-
-            a{     
-            .logo_img{
-                    height: 7vh;
-                    width: auto;
-            }
-        }
-        .titulo_principal{
-                    font-weight: 700;
-                    font-size: 32px;
-                    color: v.$colorSecundario;
-            }
-        }
-        #menu_productos{
-        display: flex;
-        color: v.$colorSecundario;
-        width: 40vw;
-        justify-content: space-around;
-            a.navegacion_tienda{
-            text-decoration: none;       
-            font-weight: 2GU00;
-            font-size: 2vh; 
-            color: v.$colorSecundario;
-            }
-            }
-        }
-        .barra_navegacion{
-        display: flex;             
-        flex-direction: row;       
-        gap: 3vw;                 
-            a img {
-            width: auto;
-            height: v.$imgHeader;
+.naveg{
+    background-color: black;
 }
+.gap{
+    gap: 5vw;
+
 }
