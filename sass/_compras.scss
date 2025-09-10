@@ -2,8 +2,8 @@
 .main_compras{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    gap: 10vw;
+    width: 100%;
+    gap: 5vw;
     padding-top: 15vh;
 
     h2.sub_main_com{
@@ -95,7 +95,7 @@
 
 
 
-    @media (max-width: 768px) {
+    @include v.mobile{
     .main_compras {
     padding-top: 12vh;
     gap: 6vh;

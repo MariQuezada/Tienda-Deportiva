@@ -4,13 +4,15 @@
     display: flex;
     flex-direction: column;
     padding-top: 4vw;
+    width: 100%;
 
     .contenedor_fondo{
         position: relative;
-        display: inline-block;
+         display: inline-block;
+    overflow-x: hidden;
 
         img.conocenos_fondo{
-        width: 100vw;
+        width: 100%;
         height: 25vw;
         }
         h2.h2_titulo{
@@ -72,7 +74,7 @@
         flex-direction: column;
         background: #050101;
         background: linear-gradient(0deg, rgba(5, 1, 1, 1) 51%, rgba(122, 7, 7, 1) 80%, rgba(255, 255, 255, 1) 100%);
-        width: 100vw;
+        width: 100%;
         padding: 5vw;
         gap: 5vw;
 
@@ -172,7 +174,7 @@
         color: white;
             }
         iframe{
-            width: 80vw;
+            width: 80%;
             height: 30vh;
             filter: invert(100%);
         }
@@ -186,11 +188,13 @@
 
 
 
-@media (max-width: 768px) {
+@include v.mobile {
     .main_conocenos {
+    overflow-x: hidden;
     padding-top: 8vh;
 
     .contenedor_fondo {
+
         img.conocenos_fondo {
         height: 15vh;
         }
@@ -235,13 +239,11 @@
             height: auto;
             }
         }
-        /*0*/
         }
         .opiniones_cifras_mapa {
         padding: 6vw;
         gap: 6vh;
 
-        /*opiniones*/
         div.opiniones {
             gap: 5vw;
 

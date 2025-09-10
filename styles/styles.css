@@ -2,12 +2,13 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 100%;
   box-sizing: border-box;
   font-family: Roboto;
   text-decoration: none;
 }
 
-.main_suplementos, .main_accesorios, .main_calzado, .main_ropa {
+.main_accesorios, .main_calzado, .main_ropa {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +18,7 @@
   width: 100%;
 }
 
-.main_suplementos .productos_suplementos, .main_accesorios .productos_accesorios, .main_calzado .productos_calzado, .main_ropa .productos_ropa {
+.main_accesorios .productos_accesorios, .main_calzado .productos_calzado, .main_ropa .productos_ropa {
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -26,30 +27,30 @@
   gap: 1vw;
 }
 
-.main_suplementos .productos_suplementos section.sectiones_produc_sup, .main_accesorios .productos_accesorios section.sectiones_produc_acces, .main_calzado .productos_calzado section.sectiones_produc_calz, .main_ropa .productos_ropa section.sectiones_produc_ropa {
+.main_accesorios .productos_accesorios section.sectiones_produc_acces, .main_calzado .productos_calzado section.sectiones_produc_calz, .main_ropa .productos_ropa section.sectiones_produc_ropa {
   display: flex;
   flex-direction: column;
 }
 
-.main_suplementos .productos_suplementos img.img_main_productos, .main_accesorios .productos_accesorios img.img_main_acces, .main_calzado .productos_calzado img.img_main_productos, .main_ropa .productos_ropa img.img_main_ropa {
+.main_accesorios .productos_accesorios img.img_main_acces, .main_calzado .productos_calzado img.img_main_productos, .main_ropa .productos_ropa img.img_main_ropa {
   width: auto;
   height: 55vh;
   margin-bottom: 1.5px;
 }
 
-.main_suplementos .productos_suplementos h2 .nombre_prod_sup, .main_accesorios .productos_accesorios h2 .nombre_prod_acces, .main_calzado .productos_calzado h2 .nombre_prod_calz, .main_ropa .productos_ropa h2 .nombre_prod_ropa {
+.main_accesorios .productos_accesorios h2 .nombre_prod_acces, .main_calzado .productos_calzado h2 .nombre_prod_calz, .main_ropa .productos_ropa h2 .nombre_prod_ropa {
   font-weight: 400;
   font-size: 16px;
   color: rgb(0, 0, 0);
 }
 
-.main_suplementos .productos_suplementos .descripcion_productos_sup, .main_accesorios .productos_accesorios .descripcion_productos_acces, .main_calzado .productos_calzado .descripcion_productos_calzado, .main_ropa .productos_ropa .descripcion_productos_ropa {
+.main_accesorios .productos_accesorios .descripcion_productos_acces, .main_calzado .productos_calzado .descripcion_productos_calzado, .main_ropa .productos_ropa .descripcion_productos_ropa {
   font-weight: 400;
   font-size: 15px;
   color: rgb(0, 0, 0);
 }
 
-.main_suplementos .productos_suplementos .precio_produc_sup, .main_accesorios .productos_accesorios .precio_produc_acces, .main_calzado .productos_calzado .precio_produc_calz, .main_ropa .productos_ropa .precio_produc_ropa {
+.main_accesorios .productos_accesorios .precio_produc_acces, .main_calzado .productos_calzado .precio_produc_calz, .main_ropa .productos_ropa .precio_produc_ropa {
   font-weight: 600;
   font-size: 15px;
   color: rgb(0, 0, 0);
@@ -57,6 +58,8 @@
 
 .naveg {
   background-color: black;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .gap {
@@ -86,7 +89,6 @@
 }
 .main_inicio .contenedor_productos article.article_produc_index .productos {
   display: flex;
-  align-items: center;
   flex-direction: row;
   justify-content: center;
   gap: 1vw;
@@ -122,7 +124,7 @@
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .contenedor_productos {
     display: flex;
     flex-direction: column;
@@ -135,7 +137,6 @@
     gap: 0.2rem;
   }
   .contenedor_productos .productos .sectiones_productos {
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +144,7 @@
   .contenedor_productos .productos .sectiones_productos .img_main_inicio {
     width: 100%;
     height: auto;
-    max-height: 250px;
+    max-height: 200px;
   }
   .contenedor_productos .productos .sectiones_productos .nombre_de_productos {
     font-size: 0.85rem;
@@ -200,8 +201,8 @@
 .main_compras {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  gap: 10vw;
+  width: 100%;
+  gap: 5vw;
   padding-top: 15vh;
 }
 .main_compras h2.sub_main_com {
@@ -279,7 +280,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .main_compras {
     padding-top: 12vh;
     gap: 6vh;
@@ -344,10 +345,7 @@
 .main_img {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  align-items: stretch;
-  padding-left: 19vw;
-  padding-right: 0%;
+  align-items: center;
   padding-top: 4%;
   gap: 16vw;
   width: 100%;
@@ -418,10 +416,10 @@
   top: 7vw;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 430px) {
   .main_img {
+    height: 100%;
     display: block;
-    background: none !important; /* elimina fondo */
     padding: 1rem;
     padding-top: 12%;
   }
@@ -452,15 +450,6 @@
     font-size: 1rem;
     margin: 0.5rem 0;
   }
-  .main_img .caja_contenido .contenedor {
-    display: none;
-  }
-  .main_img .caja_contenido .contenedor div.fondo {
-    display: none;
-  }
-  .main_img .caja_contenido .contenedor div.fondo .img_fondo {
-    display: none !important;
-  }
 }
 .main_ropa a img {
   width: 100vw;
@@ -474,7 +463,7 @@
   width: 100%;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .main_accesorios {
     padding-left: 0;
     padding-right: 0;
@@ -509,10 +498,6 @@
     height: auto;
     max-height: 210px;
   }
-}
-.main_suplementos a img {
-  width: 100vw;
-  height: auto;
 }
 .footer {
   display: flex;
@@ -552,13 +537,15 @@
   display: flex;
   flex-direction: column;
   padding-top: 4vw;
+  width: 100%;
 }
 .main_conocenos .contenedor_fondo {
   position: relative;
   display: inline-block;
+  overflow-x: hidden;
 }
 .main_conocenos .contenedor_fondo img.conocenos_fondo {
-  width: 100vw;
+  width: 100%;
   height: 25vw;
 }
 .main_conocenos .contenedor_fondo h2.h2_titulo {
@@ -613,7 +600,7 @@
   flex-direction: column;
   background: #050101;
   background: linear-gradient(0deg, rgb(5, 1, 1) 51%, rgb(122, 7, 7) 80%, rgb(255, 255, 255) 100%);
-  width: 100vw;
+  width: 100%;
   padding: 5vw;
   gap: 5vw;
 }
@@ -707,13 +694,14 @@
   color: white;
 }
 .div_conocenos div.opiniones_cifras_mapa .section_mapa iframe {
-  width: 80vw;
+  width: 80%;
   height: 30vh;
   filter: invert(100%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .main_conocenos {
+    overflow-x: hidden;
     padding-top: 8vh;
   }
   .main_conocenos .contenedor_fondo img.conocenos_fondo {
@@ -729,7 +717,6 @@
   .main_conocenos .div_conocenos .contenido_principal {
     padding-top: 5vh;
     gap: 5vh;
-    /*0*/
   }
   .main_conocenos .div_conocenos .contenido_principal section.section_princ {
     display: grid;
@@ -757,7 +744,6 @@
   .main_conocenos .div_conocenos .opiniones_cifras_mapa {
     padding: 6vw;
     gap: 6vh;
-    /*opiniones*/
   }
   .main_conocenos .div_conocenos .opiniones_cifras_mapa div.opiniones {
     gap: 5vw;

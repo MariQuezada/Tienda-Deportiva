@@ -30,7 +30,7 @@
 
 
 
-    @media (max-width: 768px) {
+    @include v.mobile{
         .main_accesorios{
         padding-left: 0;
         padding-right: 0;

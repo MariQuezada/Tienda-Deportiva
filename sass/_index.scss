@@ -23,7 +23,6 @@ align-items: center;
 
 .productos{
  display: flex;
- align-items: center;
  flex-direction: row;
  justify-content: center;
  gap: 1vw;
@@ -68,7 +67,7 @@ section.sectiones_productos{
 
 
 
-@media (max-width: 768px) {
+@include v.mobile{
 
   .contenedor_productos {
     display: flex;
@@ -84,7 +83,6 @@ section.sectiones_productos{
  
 
   .sectiones_productos {
-    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,7 +90,7 @@ section.sectiones_productos{
     .img_main_inicio {
     width: 100%;
     height: auto;          
-    max-height: 250px;      
+    max-height: 200px;      
     }
 
 
