@@ -3,8 +3,8 @@
 .main_accesorios{
     @extend %mainProductos;
 
-    a.img_fondo_paginas{
-        width: 100%;
+    .img_fondo_acces{
+        width: 100vw;
         height: auto;
     }
 
@@ -38,9 +38,9 @@
 
 
 .productos_accesorios{
-   padding-left: 0;
-   padding-right: 0;
-   gap: 0.1px;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 0.1px;
 
 
 }    

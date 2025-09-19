@@ -1,14 +1,14 @@
 @use "variables" as v;
 
 .main_ropa{
-    @extend %mainProductos;
+        @extend %mainProductos;
 
-    a img{
+        .img_fondo_ropa{
         width: 100vw;
         height: auto;
-    }
+        }
 
-    .productos_ropa{
+        .productos_ropa{
                 @extend %divProductos;
         section.sectiones_produc_ropa{
                 @extend %sectionesProductos;
@@ -25,5 +25,56 @@
         .precio_produc_ropa{
                 @extend %precioProd;
 }
+}
+}
+
+        @include v.mobile{
+        .main_ropa{
+        padding-left: 0;
+        padding-right: 0;
+        }
+
+
+.productos_ropa{
+        padding-left: 0;
+        padding-right: 0;
+
+
+
+}    
+.img_fondo_ropa{
+        width: 100%;
+        height: auto;
+}    
+
+.divv_ropa{
+
+        display: grid!important;
+        grid-template-areas: 
+". aa bb ."
+". cc dd ."
+;
+
+}
+
+.sect_aa{
+        grid-area: aa;   
+}
+.sect_bb{
+        grid-area: bb;  
+}
+.sect_cc{
+        grid-area: cc;
+
+}
+.sect_dd{
+        grid-area: dd;
+}
+
+.img_main_ropa{
+        width: 100%;
+        height: auto;          
+        max-height: 210px; 
+
 }
 }

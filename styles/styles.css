@@ -66,6 +66,10 @@
   gap: 5vw;
 }
 
+.icono:hover {
+  background-color: rgb(87, 87, 87);
+}
+
 .main_inicio {
   display: flex;
   flex-direction: column;
@@ -196,6 +200,9 @@
   background: black;
   color: white;
   border: none;
+}
+.main_login .section_login .form_login .button_iniciar:hover {
+  background: #353535;
 }
 
 .main_compras {
@@ -451,16 +458,87 @@
     margin: 0.5rem 0;
   }
 }
-.main_ropa a img {
+.main_ropa .img_fondo_ropa {
   width: 100vw;
   height: auto;
+}
+@media (max-width: 430px) {
+  .main_ropa {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .productos_ropa {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .img_fondo_ropa {
+    width: 100%;
+    height: auto;
+  }
+  .divv_ropa {
+    display: grid !important;
+    grid-template-areas: ". aa bb ." ". cc dd .";
+  }
+  .sect_aa {
+    grid-area: aa;
+  }
+  .sect_bb {
+    grid-area: bb;
+  }
+  .sect_cc {
+    grid-area: cc;
+  }
+  .sect_dd {
+    grid-area: dd;
+  }
+  .img_main_ropa {
+    width: 100%;
+    height: auto;
+    max-height: 210px;
+  }
 }
 .main_calzado a img {
   width: 100vw;
   height: auto;
 }
-.main_accesorios a.img_fondo_paginas {
-  width: 100%;
+@media (max-width: 430px) {
+  .main_calzado {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .productos_calzado {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 0.1px;
+  }
+  .img_fondo_calzado {
+    width: 100%;
+    height: auto;
+  }
+  .divv_calz {
+    display: grid !important;
+    grid-template-areas: ". a1 b2 ." ". c3 d4 .";
+  }
+  .sect_1 {
+    grid-area: a1;
+  }
+  .sect_2 {
+    grid-area: b2;
+  }
+  .sect_3 {
+    grid-area: c3;
+  }
+  .sect_4 {
+    grid-area: d4;
+  }
+  .img_main_productos {
+    width: 100%;
+    height: auto;
+    max-height: 210px;
+  }
+}
+.main_accesorios .img_fondo_acces {
+  width: 100vw;
   height: auto;
 }
 @media (max-width: 430px) {
